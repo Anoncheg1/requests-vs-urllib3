@@ -1,7 +1,7 @@
 # requests-vs-urllib3
 two implementation of same requests in requests and urllib
 
-| request -------------------------              ------------------ ----|urllib3 -----------------------------------------------------|
+| request |urllib3|
 |---------|-------|
 |   r= requests.post('http:             | http = urllib3.PoolManager() ;  http.request('POST'         |
 | files={'file': file}                                 |    with open(file_path, 'rb') as file: file_data = file.read()  ; fields={'file': ('a.mp3', file_data)}              |
